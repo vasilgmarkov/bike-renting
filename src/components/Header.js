@@ -30,8 +30,8 @@ export default function Header() {
   const logOutUser = () => dispatch(logOut());
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div id="header" className={classes.root}>
+      <AppBar position="fixed">
         <Toolbar>
           <Link to="/">
             <Typography variant="h6" className={classes.title}>

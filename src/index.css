@@ -10,7 +10,7 @@
   z-index: 1;
 }
 
-#root > div > div.makeStyles-root-1 > header,
+#header > header,
 #footer > .MuiBottomNavigation-root {
   background-color: #6db33f;
 }
