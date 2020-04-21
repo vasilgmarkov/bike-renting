@@ -7,7 +7,7 @@ export const login = user => dispatch => {
       "Content-Type": "application/x-www-form-urlencoded"
     },
     method: "POST",
-    body: getBody({ name: user.username, pwd: user.password })
+    body: getBody({ name: user.username.toLowerCase(), pwd: user.password })
   })
     .then(data => {
       if (data.status === 200) {
@@ -31,7 +31,7 @@ export const createUser = user => dispatch => {
     },
     method: "POST",
     body: JSON.stringify({
-      username: user.username,
+      username: user.username.toLowerCase(),
       password: user.password,
       email: user.email
     })
